@@ -73,9 +73,13 @@ const ThreadWelcome: FC = () => {
     <ThreadPrimitive.Empty>
       <div className="flex w-full max-w-[var(--thread-max-width)] flex-grow flex-col">
         <div className="flex w-full flex-grow flex-col items-center justify-center">
-          <p className="mt-4 font-medium">
-            Bienvenue sur KPMG Audit AI. Comment puis-je vous assister
-            aujourd'hui ?
+          <p className="mt-4 font-medium text-center">
+          <span className="text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+              Bienvenue sur KPMG Audit AI
+            </span>  <br/>
+            <span className="text-sm md:text-base lg:text-lg mt-2 md:mt-4">
+              Comment puis-je vous assister aujourd'hui ?
+            </span>
           </p>
         </div>
         <ThreadWelcomeSuggestions />

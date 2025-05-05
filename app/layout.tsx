@@ -1,5 +1,5 @@
 import "./css/style.css";
-
+import Header from "@/components/ui/header";
 import { Inter } from "next/font/google";
 
 const inter = Inter({
@@ -31,7 +31,7 @@ export const metadata = {
     ],
     locale: "fr_FR",
     type: "website",
-  }
+  },
 };
 
 export default function RootLayout({
@@ -45,6 +45,7 @@ export default function RootLayout({
         className={`${inter.variable} bg-gray-50 font-inter tracking-tight text-gray-900 antialiased`}
       >
         <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
+          <Header />
           {children}
         </div>
       </body>
