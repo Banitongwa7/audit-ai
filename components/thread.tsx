@@ -89,7 +89,7 @@ const ThreadWelcomeSuggestions: FC = () => {
     <div className="mt-3 grid grid-cols-1 md:grid-cols-2 w-full items-stretch justify-center gap-4">
       <ThreadPrimitive.Suggestion
         className="hover:bg-muted/80 flex max-w-sm grow basis-0 flex-col items-center justify-center rounded-lg border p-3 transition-colors ease-in"
-        prompt="What is the weather in Tokyo?"
+        prompt="Cite les normes d'audit."
         method="replace"
         autoSend
       >
@@ -99,7 +99,7 @@ const ThreadWelcomeSuggestions: FC = () => {
       </ThreadPrimitive.Suggestion>
       <ThreadPrimitive.Suggestion
         className="hover:bg-muted/80 flex max-w-sm grow basis-0 flex-col items-center justify-center rounded-lg border p-3 transition-colors ease-in"
-        prompt="What is assistant-ui?"
+        prompt="Quel est le rôle de l'auditeur dans l'audit financier ?"
         method="replace"
         autoSend
       >
@@ -109,7 +109,7 @@ const ThreadWelcomeSuggestions: FC = () => {
       </ThreadPrimitive.Suggestion>
       <ThreadPrimitive.Suggestion
         className="hover:bg-muted/80 flex max-w-sm grow basis-0 flex-col items-center justify-center rounded-lg border p-3 transition-colors ease-in"
-        prompt="What is the weather in Tokyo?"
+        prompt="Analyser les risques significatifs"
         method="replace"
         autoSend
       >
@@ -119,7 +119,7 @@ const ThreadWelcomeSuggestions: FC = () => {
       </ThreadPrimitive.Suggestion>
       <ThreadPrimitive.Suggestion
         className="hover:bg-muted/80 flex max-w-sm grow basis-0 flex-col items-center justify-center rounded-lg border p-3 transition-colors ease-in"
-        prompt="What is assistant-ui?"
+        prompt="Documenter les procédures d'audit"
         method="replace"
         autoSend
       >
