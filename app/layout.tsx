@@ -23,7 +23,7 @@ export const metadata = {
     siteName: "KPMG Audit AI",
     images: [
       {
-        url: "/favicon.svg",
+        url: "/favicon.png",
         width: 1200,
         height: 630,
         alt: "KPMG Audit AI",
