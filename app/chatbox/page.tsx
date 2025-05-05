@@ -1,5 +1,6 @@
-import { Assistant } from "./assistant";
+import { Assistant } from "../assistant";
+
 
 export default function ChatBox() {
-  return <Assistant />;
-}
+    return <Assistant />;
+  }

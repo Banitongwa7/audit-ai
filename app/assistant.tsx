@@ -2,8 +2,8 @@
 
 import { AssistantRuntimeProvider } from "@assistant-ui/react";
 import { useChatRuntime } from "@assistant-ui/react-ai-sdk";
-import { Thread } from "@/components/assistant-ui/thread";
-import { ThreadList } from "@/components/assistant-ui/thread-list";
+import { Thread } from "@/components/thread";
+import { ThreadList } from "@/components/thread-list";
 
 export const Assistant = () => {
   const runtime = useChatRuntime({

@@ -19,8 +19,8 @@ import {
 import { cn } from "@/lib/utils";
 
 import { Button } from "@/components/ui/button";
-import { MarkdownText } from "@/components/assistant-ui/markdown-text";
-import { TooltipIconButton } from "@/components/assistant-ui/tooltip-icon-button";
+import { MarkdownText } from "@/components/markdown-text";
+import { TooltipIconButton } from "@/components/tooltip-icon-button";
 
 export const Thread: FC = () => {
   return (
@@ -73,7 +73,9 @@ const ThreadWelcome: FC = () => {
     <ThreadPrimitive.Empty>
       <div className="flex w-full max-w-[var(--thread-max-width)] flex-grow flex-col">
         <div className="flex w-full flex-grow flex-col items-center justify-center">
-          <p className="mt-4 font-medium">How can I help you today?</p>
+          <p className="mt-4 font-medium">
+            How can I help you today?
+          </p>
         </div>
         <ThreadWelcomeSuggestions />
       </div>
@@ -246,10 +248,7 @@ const BranchPicker: FC<BranchPickerPrimitive.Root.Props> = ({
   return (
     <BranchPickerPrimitive.Root
       hideWhenSingleBranch
-      className={cn(
-        "text-muted-foreground inline-flex items-center text-xs",
-        className
-      )}
+      className={cn("text-muted-foreground inline-flex items-center text-xs", className)}
       {...rest}
     >
       <BranchPickerPrimitive.Previous asChild>
