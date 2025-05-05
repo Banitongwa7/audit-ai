@@ -1,5 +1,7 @@
-import { Assistant } from "./assistant";
+import React from 'react'
 
 export default function Home() {
-  return <Assistant />;
+  return (
+    <div>Home</div>
+  )
 }
