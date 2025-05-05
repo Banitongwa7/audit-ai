@@ -70,8 +70,8 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              The website builder you're <br className="max-lg:hidden" />
-              looking for
+              Votre partenaire IA <br className="max-lg:hidden" />
+              pour l'audit intelligent
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -79,8 +79,9 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Simple is a modern website builder powered by AI that changes
-                how companies create user interfaces together.
+                 Discutez avec KPMG Audit AI, votre assistant virtuel spécialisé 
+                qui répond instantanément à vos questions d'audit et vous accompagne 
+                dans vos missions avec expertise.
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
                 <div
@@ -93,17 +94,8 @@ export default function HeroHome() {
                     href="#0"
                   >
                     <span className="relative inline-flex items-center">
-                      Start Free Trial{" "}
-                      <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
-                        -&gt;
-                      </span>
+                    Commencer une conversation
                     </span>
-                  </a>
-                  <a
-                    className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    href="#0"
-                  >
-                    Learn More
                   </a>
                 </div>
               </div>
@@ -115,35 +107,30 @@ export default function HeroHome() {
             data-aos="zoom-y-out"
             data-aos-delay={600}
           >
-            <div className="relative aspect-video rounded-2xl bg-gray-900 px-5 py-3 shadow-xl before:pointer-events-none before:absolute before:-inset-5 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] after:absolute after:-inset-5 after:-z-10 after:border-x after:[border-image:linear-gradient(to_bottom,transparent,--theme(--color-slate-300/.8),transparent)1]">
-              <div className="relative mb-8 flex items-center justify-between before:block before:h-[9px] before:w-[41px] before:bg-[length:16px_9px] before:[background-image:radial-gradient(circle_at_4.5px_4.5px,var(--color-gray-600)_4.5px,transparent_0)] after:w-[41px]">
-                <span className="text-[13px] font-medium text-white">
-                  cruip.com
+            <div className="relative aspect-video rounded-2xl bg-gray-800 px-5 py-3 shadow-xl before:pointer-events-none before:absolute before:-inset-5 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] after:absolute after:-inset-5 after:-z-10 after:border-x after:[border-image:linear-gradient(to_bottom,transparent,--theme(--color-slate-300/.8),transparent)1]">
+              <div className="relative w-full mb-4 flex items-center justify-center border-b border-gray-700 pb-3">
+                <span className="text-[15px] font-medium text-white">
+                  KPMG Audit AI
                 </span>
               </div>
-              <div className="font-mono text-gray-500 [&_span]:opacity-0">
-                <span className="animate-[code-1_10s_infinite] text-gray-200">
-                  npm login
-                </span>{" "}
-                <span className="animate-[code-2_10s_infinite]">
-                  --registry=https://npm.pkg.github.com
-                </span>
-                <br />
-                <span className="animate-[code-3_10s_infinite]">
-                  --scope=@phanatic
-                </span>{" "}
-                <span className="animate-[code-4_10s_infinite]">
-                  Successfully logged-in.
-                </span>
-                <br />
-                <br />
-                <span className="animate-[code-5_10s_infinite] text-gray-200">
-                  npm publish
-                </span>
-                <br />
-                <span className="animate-[code-6_10s_infinite]">
-                  Package published.
-                </span>
+              <div className="font-sans text-gray-300 [&_span]:opacity-0 space-y-4 ">
+                <div className="mb-4">
+                  <span className="animate-[code-1_10s_infinite] rounded-lg bg-blue-600/10 p-3">
+                    Bonjour, comment puis-je vous aider avec votre mission d'audit aujourd'hui ?
+                  </span>
+                </div>
+                <div className="mb-4 text-right">
+                  <span className="animate-[code-2_10s_infinite] rounded-lg bg-gray-700/30 p-3">
+                    J'ai besoin d'aide pour l'analyse des risques significatifs.
+                  </span>
+                </div>
+                <div className="mb-4">
+                  <span className="animate-[code-3_10s_infinite] rounded-lg bg-blue-600/10 p-3">
+                    Je peux vous aider à identifier et évaluer les risques significatifs. 
+                    Commençons par examiner les domaines clés...
+                  </span>
+                </div>
+               
               </div>
             </div>
           </div>
