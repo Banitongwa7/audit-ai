@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Stripes from "@/public/images/stripes-dark.svg";
+import Link from "next/link";
 
 export default function Cta() {
   return (
@@ -34,9 +35,9 @@ export default function Cta() {
             Optimisez vos missions d'audit avec KPMG Audit AI
             </h2>
             <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
-              <a
+              <Link
                 className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                href="#0"
+                href={"/chatbox"}
               >
                 <span className="relative inline-flex items-center">
                 Démarrer une conversation{" "}
@@ -44,7 +45,7 @@ export default function Cta() {
                     -&gt;
                   </span>
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
