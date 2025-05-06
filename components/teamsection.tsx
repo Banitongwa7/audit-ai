@@ -4,20 +4,20 @@ export default function TeamSection() {
     const teamMembers = [
         {
           name: "Gloire Butumbi",
-          role: "Lead Developer",
-          description: "Expert en intelligence artificielle et architectures cloud",
+          role: "Membre de l'équipe de gestion de projet",
+          description: "Etudiant en Bachelor 3 gestion des entreprises à l'ESMK",
           image: "/images/team/1.png" // Ajoutez une image appropriée
         },
         {
           name: "Marie-Antoinette Kajangu",
-          role: "Full-Stack Developer",
-          description: "Spécialiste en développement d'interfaces conversationnelles",
+          role: "Membre de l'équipe de gestion de projet",
+          description: "Etudiante en Bachelor 3 gestion des entreprises à l'ESMK",
           image: "/images/team/2.png" // Ajoutez une image appropriée
         },
         {
           name: "Diana Nyota",
-          role: "Backend Developer",
-          description: "Expert en traitement du langage naturel et API",
+          role: "Membre de l'équipe de gestion de projet",
+          description: "Etudiante en Bachelor 3 gestion des entreprises à l'ESMK",
           image: "/images/team/3.png" // Ajoutez une image appropriée
         }
       ];
