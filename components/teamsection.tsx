@@ -6,19 +6,19 @@ export default function TeamSection() {
           name: "Gloire Butumbi",
           role: "Membre de l'équipe de gestion de projet",
           description: "Etudiant en Bachelor 3 gestion des entreprises à l'ESMK",
-          image: "/images/team/1.png" // Ajoutez une image appropriée
+          image: "/images/team/1.png"
         },
         {
           name: "Marie-Antoinette Kajangu",
           role: "Membre de l'équipe de gestion de projet",
           description: "Etudiante en Bachelor 3 gestion des entreprises à l'ESMK",
-          image: "/images/team/2.png" // Ajoutez une image appropriée
+          image: "/images/team/2.png" 
         },
         {
           name: "Diana Nyota",
           role: "Membre de l'équipe de gestion de projet",
           description: "Etudiante en Bachelor 3 gestion des entreprises à l'ESMK",
-          image: "/images/team/3.png" // Ajoutez une image appropriée
+          image: "/images/team/3.png" 
         }
       ];
   return (

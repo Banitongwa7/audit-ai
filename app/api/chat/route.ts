@@ -14,7 +14,6 @@ export async function POST(req: Request) {
     system,
     tools: {
       ...frontendTools(tools),
-      // add backend tools here
     },
   });
 
