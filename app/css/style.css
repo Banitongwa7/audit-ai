@@ -375,6 +375,7 @@
   animation: typewriter 16s ease-in-out infinite;
   display: inline-block;
   background: linear-gradient(to right, #2563eb, #3b82f6);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-weight: bold;
