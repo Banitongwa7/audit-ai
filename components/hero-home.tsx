@@ -71,8 +71,8 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              Votre partenaire IA <br className="max-lg:hidden" />
-              pour l'audit intelligent
+              Votre partenaire IA pour <br className="max-lg:hidden" />
+              <span className="typing-effect"></span>
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -80,9 +80,9 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                 Discutez avec KPMG Audit AI, votre assistant virtuel spécialisé 
-                qui répond instantanément à vos questions d'audit et vous accompagne 
-                dans vos missions avec expertise.
+                Discutez avec KPMG Audit AI, votre assistant virtuel spécialisé
+                qui répond instantanément à vos questions d'audit et vous
+                accompagne dans vos missions avec expertise.
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
                 <div
@@ -95,7 +95,7 @@ export default function HeroHome() {
                     href={"/chatbox"}
                   >
                     <span className="relative inline-flex items-center">
-                    Commencer une conversation
+                      Commencer une conversation
                     </span>
                   </Link>
                 </div>
@@ -117,7 +117,8 @@ export default function HeroHome() {
               <div className="font-sans text-gray-300 [&_span]:opacity-0 space-y-4 ">
                 <div className="mb-4">
                   <span className="animate-[code-1_10s_infinite] rounded-lg bg-blue-600/10 p-3">
-                    Bonjour, comment puis-je vous aider avec votre mission d'audit aujourd'hui ?
+                    Bonjour, comment puis-je vous aider avec votre mission
+                    d'audit aujourd'hui ?
                   </span>
                 </div>
                 <div className="mb-4 text-right">
@@ -127,11 +128,10 @@ export default function HeroHome() {
                 </div>
                 <div className="mb-4">
                   <span className="animate-[code-3_10s_infinite] rounded-lg bg-blue-600/10 p-3">
-                    Je peux vous aider à identifier et évaluer les risques significatifs. 
-                    Commençons par examiner les domaines clés...
+                    Je peux vous aider à identifier et évaluer les risques
+                    significatifs. Commençons par examiner les domaines clés...
                   </span>
                 </div>
-               
               </div>
             </div>
           </div>
