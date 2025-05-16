@@ -18,7 +18,7 @@ export default function TeamSection() {
           name: "Diana Nyota",
           role: "Membre de l'équipe de gestion de projet",
           description: "Etudiante en Bachelor 3 gestion des entreprises à l'ESMK",
-          image: "/images/team/3.png" 
+          image: "/images/team/diana.jpeg" 
         }
       ];
   return (
@@ -39,12 +39,13 @@ export default function TeamSection() {
               key={index}
               className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105"
             >
-              <div className="relative h-48 w-full">
+              <div className="relative h-80 w-full overflow-hidden">
                 <Image
                   src={member.image}
                   alt={member.name}
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <div className="p-6">
