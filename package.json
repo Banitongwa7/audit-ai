@@ -19,6 +19,7 @@
     "@types/node": "^22.13.0",
     "@types/react": "19.0.8",
     "@types/react-dom": "19.0.3",
+    "@vercel/analytics": "^1.5.0",
     "ai": "^4.3.13",
     "aos": "3.0.0-beta.6",
     "class-variance-authority": "^0.7.1",
