@@ -12,7 +12,7 @@ export default function TeamSection() {
           name: "Marie-Antoinette Kajangu",
           role: "Membre de l'équipe de gestion de projet",
           description: "Etudiante en Bachelor 3 gestion des entreprises à l'ESMK",
-          image: "/images/team/2.png" 
+          image: "/images/team/marie.jpeg" 
         },
         {
           name: "Diana Nyota",
