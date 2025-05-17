@@ -1,49 +1,94 @@
-import Image from "next/image";
-import TestimonialImg from "@/public/images/large-testimonial.jpg";
+"use client";
+import { useState } from "react";
 
 export default function LargeTestimonial() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
-    <section>
-      <div className="mx-auto max-w-2xl px-4 sm:px-6">
-        <div className="py-12 md:py-20">
-          <div className="space-y-3 text-center">
-            <div className="relative inline-flex">
-              <svg
-                className="absolute -left-6 -top-2 -z-10"
-                width={40}
-                height={49}
-                viewBox="0 0 40 49"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+    <section className="bg-gray-50 py-16">
+      <div className="mx-auto max-w-3xl px-6 sm:px-8 lg:px-10">
+        <div className="py-12 md:py-20 animate-fade-in">
+          <div className="space-y-8 text-center">
+            <div className="relative inline-flex justify-center">
+              <button
+                onClick={openModal}
+                className="focus:outline-none"
+                aria-label="Play Video"
               >
-                <path
-                  d="M22.7976 -0.000136375L39.9352 23.4746L33.4178 31.7234L13.7686 11.4275L22.7976 -0.000136375ZM9.34947 17.0206L26.4871 40.4953L19.9697 48.7441L0.320491 28.4482L9.34947 17.0206Z"
-                  fill="#D1D5DB"
+                <img
+                  src="https://img.youtube.com/vi/5IvQ3fYKnfM/0.jpg"
+                  alt="KPMG Audit AI Video Thumbnail"
+                  className="rounded-lg shadow-lg w-full max-w-4xl border-4 border-gray-200 cursor-pointer"
                 />
-              </svg>
-              <Image
-                className="rounded-full"
-                src={TestimonialImg}
-                width={48}
-                height={48}
-                alt="Large testimonial"
-              />
+              </button>
             </div>
-            <p className="text-2xl font-bold text-gray-900">
-              “KPMG Audit AI a transformé notre façon de travailler. De l'analyse des risques à{" "}
-              <em className="italic text-gray-500">l'examen des procédures d'audit</em>,
-              c'est devenu notre assistant incontournable pour toutes nos missions.”
+            <h2 className="text-4xl font-extrabold text-gray-900">
+              KPMG Audit AI
+            </h2>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              KPMG Audit AI est un outil avancé conçu pour révolutionner le
+              processus d'audit. Grâce à l'intelligence artificielle, il
+              améliore l'analyse des risques, simplifie les procédures d'audit
+              et fournit des insights exploitables, garantissant précision et
+              efficacité dans chaque mission.
             </p>
-            <div className="text-sm font-medium text-gray-500">
-              <span className="text-gray-700">Mary Sullivan</span>{" "}
-              <span className="text-gray-400">/</span>{" "}
-              <a className="text-blue-500" href="#0">
-              Directrice Audit chez KPMG France
-              </a>
-            </div>
+            <a
+              className="inline-block px-6 py-3 text-white bg-blue-600 font-medium text-lg rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              En savoir plus sur KPMG Audit AI
+            </a>
           </div>
         </div>
       </div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-70 backdrop-blur-sm"
+          role="dialog"
+          aria-modal="true"
+        >
+          <div className="relative bg-white rounded-lg shadow-lg max-w-4xl w-full">
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 text-gray-600 hover:text-gray-900 focus:outline-none"
+              aria-label="Close Modal"
+            >
+              ✕
+            </button>
+            <iframe
+              className="rounded-lg w-full aspect-video"
+              src="https://www.youtube.com/embed/5IvQ3fYKnfM"
+              title="KPMG Audit AI Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      )}
+
+      <style jsx>{`
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-fade-in {
+          animation: fade-in 1s ease-out;
+        }
+      `}</style>
     </section>
   );
 }
