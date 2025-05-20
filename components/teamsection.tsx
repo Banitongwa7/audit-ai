@@ -6,7 +6,7 @@ export default function TeamSection() {
           name: "Gloire Butumbi",
           role: "Membre de l'équipe de gestion de projet",
           description: "Etudiant en Bachelor 3 gestion des entreprises à l'ESMK",
-          image: "/images/team/1.png"
+          image: "/images/team/gloire.jpeg"
         },
         {
           name: "Marie-Antoinette Kajangu",
@@ -22,7 +22,7 @@ export default function TeamSection() {
         }
       ];
   return (
-    <section className="bg-gray-50 py-12 md:py-20">
+    <section className="bg-gray-50 md:pb-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">

@@ -1,10 +1,9 @@
 import Hero from "@/components/hero-home";
 import BusinessCategories from "@/components/business-categories";
 import FeaturesPlanet from "@/components/features-planet";
-import LargeTestimonial from "@/components/large-testimonial";
+import Describe from "@/components/describe";
 import Cta from "@/components/cta";
 import TeamSection from "@/components/teamsection";
-import Pricing from "@/components/pricing";
 
 export default function Home() {
   return (
@@ -12,9 +11,8 @@ export default function Home() {
       <Hero />
       <BusinessCategories />
       <FeaturesPlanet />
-      <LargeTestimonial />
+      <Describe />
       <TeamSection />
-      <Pricing />
       <Cta />
     </>
   );

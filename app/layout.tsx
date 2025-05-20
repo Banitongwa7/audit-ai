@@ -2,6 +2,7 @@ import "./css/style.css";
 import Header from "@/components/ui/header";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next"
+import { Metadata } from "next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -9,9 +10,10 @@ const inter = Inter({
   display: "swap",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "ESMK | KPMG Audit AI",
   description: "Optimisez vos missions d'audit avec KPMG Audit AI",
+  metadataBase: new URL("https://kpmg-audit-ai.vercel.app"),
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
