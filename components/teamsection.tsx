@@ -26,7 +26,7 @@ export default function TeamSection() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Notre Équipe de Réalisation
+            Notre équipe de réalisation
           </h2>
           <p className="text-gray-500">
             Les talents derrière KPMG Audit AI
